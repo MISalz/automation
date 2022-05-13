@@ -2,6 +2,7 @@ LAB - Class 19
 # Project: Automated
 
 **Author:** Michelle Salazar
+Worked with Ella Svete on code
 
 ----
 ## Problem Domain
@@ -44,5 +45,6 @@ pip install pytest
 
 ## Links
 
+Helper solution: https://stackoverflow.com/questions/23996118/replace-special-characters-in-a-string-in-python
 ---
 *Notes:*
