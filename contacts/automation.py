@@ -2,14 +2,17 @@ import re
 
 
 def clean(number_string):
-    cleaned_number = number_string.replace('(', '')
-    cleaned_number = number_string.replace(')', '-')
-    cleaned_number = number_string.replace('.', '-')
+    # cleaned_number = number_string.replace('(', '')
+    # cleaned_number = number_string.replace(')', '-')
+    # cleaned_number = number_string.replace('.', '-')
+    number_string = re.sub(r"\(", '', number_string)
+    number_string = re.sub(r"\)", '-', number_string)
+    number_string = re.sub(r"\.", '-', number_string)
 
-    if len(cleaned_number) == 8:
-        cleaned_number = "206-" + cleaned_number
+    if len(number_string) == 8:
+        number_string = "206-" + number_string
 
-    return cleaned_number
+    return number_string
 
 
 def validate_phone():
